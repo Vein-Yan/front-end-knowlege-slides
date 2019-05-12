@@ -1,9 +1,9 @@
 <template>
   <div id="mySlideshow">
     <div class="eg-slideshow">
-      <slide enter="bounceInLeft" leave="bounceOutLeft">
-        <h2>Hi there !</h2>
-        <p>I am slide 1</p>
+      <slide :steps="2" enter="bounceInLeft" leave="bounceOutLeft">
+        <catalog v-if="step === 1"></catalog>
+        <catalog v-if="step === 2" :index="0"></catalog>
       </slide>
       <slide :steps="2">
         <h2>Hi there !</h2>
@@ -17,8 +17,10 @@
 
 <script>
 import { Slideshow } from 'eagle.js'
+import Catalog from './slides/Catalog.vue'
 export default {
   mixins: [Slideshow],
+  components: { Catalog },
   data() {
     return {}
   },

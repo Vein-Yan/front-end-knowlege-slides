@@ -9,6 +9,7 @@ import hljs from 'highlight.js'
 import javascript from 'highlight.js/lib/languages/javascript'
 import 'eagle.js/dist/eagle.css'
 import 'animate.css'
+import '@/styles/common.styl'
 
 Vue.config.productionTip = false
 Vue.use(Eagle)
