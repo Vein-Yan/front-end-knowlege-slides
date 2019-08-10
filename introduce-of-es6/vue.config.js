@@ -4,4 +4,7 @@ module.exports = {
       ? '/front-end-knowlege-slides/introduce-of-es6/'
       : '/',
   outputDir: '../docs/introduce-of-es6/',
+  devServer: {
+    open: true,
+  },
 }
